@@ -78,5 +78,5 @@ footer {
   text-align: center;
   background-color: lightgray;
   padding-top : 50px;
-  padding-bottom: 10px;
+  white-space: normal;
 }

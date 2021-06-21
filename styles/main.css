@@ -1,7 +1,7 @@
 
 /* Set black background color, white text and some padding */
 footer {
-    background-color: black;
+    background-color:black;
     color: white;
     padding: 15px;
   }
@@ -19,4 +19,59 @@ footer {
 }
 .word{
   color: pink;
+}
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.navigation_bar{
+  float: right;
+  padding-right: 10%;
+}
+
+.navigation_bar li
+{
+  padding-right: 20;
+  font-size: medium;
+}
+
+/* .title_panel{
+  position: relative;
+  margin: auto;
+}
+.panel
+{
+  margin: 0;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: -40px;
+  width: 50%;
+} */
+.space{
+  word-spacing: 40px;
+}
+
+.panel_title{
+  background-color: red;
+  position: relative;
+  /* width: 100px;
+  height: 100px; */
+  
+}
+.panel_style{
+  background-color:black;
+  position: absolute;
+  top: -40px;
+  left: 33%;
+  width:33%;
+}
+.panel_style h1{
+  color:white
+}
+.content{
+  margin:50px;
+}
+.container .context{
+  text-align: center;
 }

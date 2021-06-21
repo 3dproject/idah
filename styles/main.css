@@ -69,11 +69,10 @@ footer {
 .panel_style h1{
   color:white
 }
-.content{
-  margin-top:50px;
-}
+
 .context{
   text-align: center;
   margin: 0px;
   background-color: lightgray;
+  margin-top:50px;
 }

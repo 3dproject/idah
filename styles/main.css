@@ -77,5 +77,5 @@ footer {
 .context{
   text-align: center;
   background-color: lightgray;
-  padding-top:50px;
+  padding : auto 50px;
 }

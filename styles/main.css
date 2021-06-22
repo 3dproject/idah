@@ -72,14 +72,15 @@ footer {
 /* .content{
   text-align: center;
   background-color: lightgray;
-  padding-top:50px;
+  
 } */
 .container{
   margin: auto;
-  max-width: 50%;
+  max-width: 75%;
 }
 #context{
   /* text-align: center; */
   background-color: lightgray;
+  padding-top:50px;
   
 }

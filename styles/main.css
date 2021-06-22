@@ -74,12 +74,12 @@ footer {
   background-color: lightgray;
   padding-top:50px;
 } */
-.context{
+.container{
+  margin: auto;
+  max-width: 700px;
+}
+#context{
   /* text-align: center; */
   background-color: lightgray;
-  padding-top : 50px;
-  padding-bottom : 20px;
-  padding-right : 100px;
-  padding-left:  100px;
   
 }

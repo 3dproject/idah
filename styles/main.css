@@ -1,14 +1,17 @@
 
 /* Set black background color, white text and some padding */
 footer {
-    background-color:black;
+    background-color:#25274D;
     color: white;
     padding: 15px;
+    border-radius: 5px;
+    margin-top: 70px;
   }
 .carousel-inner img {
     width: 100%; /* Set width to 100% */
     margin: auto;
     min-height:200px;
+    border-radius: 5px;
 }
 
 /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -17,12 +20,16 @@ footer {
     display: none; 
   }
 }
-.word{
-  color: pink;
+.navbar-brand{
+  font-size: xx-large;
+  padding-left: 70px;
+  color: white;
 }
 .navbar {
   margin-bottom: 0;
-  border-radius: 0;
+  border-radius: 1px;
+  background-color: #25274D;
+  padding-top: 20px;
 }
 .navigation_bar{
   float: right;
@@ -32,7 +39,7 @@ footer {
 .navigation_bar li
 {
   padding-right: 20;
-  font-size: medium;
+  font-size:x-large;
 }
 
 /* .title_panel{
@@ -53,18 +60,19 @@ footer {
 }
 
 .panel_title{
-  background-color: red;
   position: relative;
   /* width: 100px;
   height: 100px; */
   
 }
 .panel_style{
-  background-color:black;
+  /* background-color: #155b7d; */
+  background-color: #25274D;
   position: absolute;
   top: -40px;
   left: 33%;
   width:33%;
+  border-radius: 10px;
 }
 .panel_style h1{
   color:white
@@ -75,12 +83,30 @@ footer {
   
 } */
 .container{
-  margin: auto;
   max-width: 75%;
 }
 #context{
   /* text-align: center; */
-  background-color: lightgray;
   padding-top:50px;
+  padding-bottom: 20px;
   
+}
+.context_area{
+  background-color: #dbddfa;
+  border-radius: 5px;
+}
+.video_content{
+  width: 700px;
+  height: 500px;
+  display: block;
+  margin: auto;
+}
+.container h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50;
+}
+
+.container p{
+  font-style: italic;
+  font-size: 20;
 }

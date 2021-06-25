@@ -7,8 +7,6 @@ $(function(){
     });
     $("#contact-info").on("click",function(){
         // window.location.href = "{{site.baseurl}}/about/about.html/#project-info-div";
-        var b= window.location.origin;
-        window.location.assign(b+"/about/about.html");
-        document.getElementById('contact-info-div').focus();
+        window.location.hash='#contact-info-div';
     });
 })

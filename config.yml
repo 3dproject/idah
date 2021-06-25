@@ -1,5 +1,5 @@
-name: Heather
-markdown: kramdown
-baseurl:
-sass: 
-	sass_dir:_sass
+	name: Heather
+	markdown: kramdown
+
+	sass: 
+		sass_dir:_sass

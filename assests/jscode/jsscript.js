@@ -6,6 +6,7 @@ $(function(){
         document.getElementById('project-info-div').focus();
     });
     $(".contact-info").on("click",function(){
-        window.location.href = "{{site.baseurl}}/about/about.html/#contact-info-div";
+        window.location.href = "{{site.baseurl}}/about/about.html";
+        document.getElementById('contact-info-div').focus();
     });
 })

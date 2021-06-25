@@ -1,0 +1,15 @@
+
+
+<div class="col-lg-4 col-md-6 card-group mt-4" id="cards">
+    <div class="card">
+        <a href="{{ post.url }}">
+            <img class="card-img-top" src="{{ post.imageurl }}" alt="Card image cap">
+        </a>
+      <div class="card-body">
+        <h5 class="card-title">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{post.itemtitle }}</a>
+        </h5>
+        <p class="card-text">{{ post.shortdesc | strip_html | truncatewords:30 }}</p>
+      </div>
+    </div>
+</div>

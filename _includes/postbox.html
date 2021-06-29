@@ -1,7 +1,7 @@
 
 
-<div class="col-lg-4 col-md-6 card-group mt-4" id="cards">
-    <div class="card">
+<div class="col-lg-4 col-md-6 card-group mt-4">
+    <div class="shadow-sm  card">
         <a href="{{ post.url | relative_url}}">
             <img class="card-img-top" src="{{ post.imageurl | relative_url }}" alt="Card image cap">
         </a>
@@ -10,6 +10,10 @@
             <a href="{{ post.url | relative_url}}">{{post.itemtitle }}</a>
         </h5>
         <p class="card-text">{{ post.shortdesc | strip_html | truncatewords:30 }}</p>
+        <!-- <button class="btn btn-default btn-rounded btn-md">Read more</button> -->
+        <a href="https://google.com" class="btn btn-primary btn-rounded btn-sm">Read more</a>
       </div>
     </div>
 </div>
+
+

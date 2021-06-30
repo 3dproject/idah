@@ -1,18 +1,22 @@
 .contact_area{
     background-color: rgb(246, 247, 248);
-    border-radius: 5px;
-  }
-  .contact-image-left img{
+    // border-radius: 5px;
+}
+.contact-image-left img{
     border-radius: 5px;
     margin-right:10px;
-    margin-left:10px; 
+    // margin-left:10px; 
     float:left;
-  }
+    max-width: 100%;
+    height: auto;
+      
+}
 
-  .contact-content{
-    text-align: justify;
-  }
-  #contact-div{
-  margin-top: 20px;
+.contact-content{
+    text-align:justify;
+    font-size: larger;
+}
+#contact-div{
+//   margin-top: 20px;
   border-radius: 5px;
-  }
+}

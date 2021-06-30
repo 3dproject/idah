@@ -3,20 +3,23 @@
   border-radius: 5px;
   padding-bottom: 20px;
 }
-
+// .container{
+//   width: 100%;
+// }
 // font size can be romved
 .container h2{
-  padding-top:20px;
+  // padding-top:20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 40px;
 }
 
-.container p{
-  font-size: larger;
-}
+// .container p{
+//   font-size: larger;
+// }
 
 .container .main-page-p{
   text-align: justify;
+  font-size: larger;
 }
 
 .embed-responsive-item{

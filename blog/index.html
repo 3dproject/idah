@@ -3,9 +3,10 @@ layout: default
 title: Blogs
 ---
 	
-
-<div class="container row panel-bottom-margin" style="margin: auto;"> 
+<div class="container panel-bottom-margin">
+<div class="row "> 
 	{% for post in site.posts %}
 	{% include postbox.html %}
 	{% endfor %}
+</div>
 </div>

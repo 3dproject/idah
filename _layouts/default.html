@@ -23,7 +23,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="{{site.baseurl}}/index.html">3D Project</a>
+          <a class="navbar-brand" href="{{site.baseurl}}/index.html">{% t global.project %}</a>
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0 " style="float: right;">
             <!-- <li class="nav-item active">
               <a class="nav-link " href="{{site.baseurl}}/about/about.html">About <span class="sr-only">(current)</span></a>
@@ -35,7 +35,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <!-- <a class="dropdown-item" href="#" onclick="window.location.href = '{{site.baseurl}}/about/about.html/#project-info-div'">Project & Site Information</a>
                 <a class="dropdown-item" id="project-info" href="#" >Project & Site Information</a> -->
-                <a class="dropdown-item" id="contact-info"href="{{site.baseurl}}/about/about.html" >Contributors & Contacts</a>
+                <a class="dropdown-item" id="contact-info"href="{{site.baseurl}}/about/about.html" >{% t global.contact %}</a>
               </div>
             </li>
             <li class="nav-item  active dropdown">
@@ -43,33 +43,56 @@
                 Artisans
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Jorge Luís Almánzar</a>
-                <a class="dropdown-item" href="#">Tomás Brand</a>
-                <a class="dropdown-item" href="#">Domiciano Carreño</a>
-                <a class="dropdown-item" href="#">Antonio De La Cruz Gomera</a>
-                <a class="dropdown-item" href="#">Milquiades Medina Ferrera</a>
+                <a class="dropdown-item" href="#">{% t global.Jorge %}</a>
+                <a class="dropdown-item" href="#">{% t global.Tomas %}</a>
+                <a class="dropdown-item" href="#">{% t global.Domiciano %}</a>
+                <a class="dropdown-item" href="#">{% t global.Antonio %}</a>
+                <a class="dropdown-item" href="#">{% t global.Milquiades %}</a>
               </div>
             </li>
             <!-- <li class="nav-item active">
               <a class="nav-link" href="#">Artisans</a>
             </li> -->
             <li class="nav-item active">
-              <a class="nav-link" href="#">Maps</a>
+              <a class="nav-link" href="#">{% t global.maps %}</a>
             </li>
             <!-- <li class="nav-item active">
               <a class="nav-link" href="{{site.baseurl}}/blog/index.html">News </a>
             </li> -->
             <li class="nav-item  active dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                News
+                {% t global.news %}
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Updates & Events</a>
-                <a class="dropdown-item" href="{{site.baseurl}}/blog/index.html">Blogs</a>
+                <a class="dropdown-item" href="#">{% t global.updates %}</a>
+                <a class="dropdown-item" href="{{site.baseurl}}/blog/index.html">{% t global.blogs %}</a>
               </div>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Resources</a>
+              <a class="nav-link" href="#">{% t global.resources %}</a>
+            </li>
+            <li class="nav-item  active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-language"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                {% for lang in site.languages %}
+                  {% unless site.lang == lang %}
+                    {% if lang == site.default_lang and site.default_locale_in_subfolder != true %}
+                      <a class="dropdown-item" href="{{ site.baseurl_root }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
+                    {% else %}
+                      <a class="dropdown-item" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
+                    {% endif %}
+            
+                    {% assign next = forloop.index | plus: 1 %}
+            
+                    {% if forloop.last != true and site.languages[forloop.index] != site.lang or site.languages[forloop.index] == site.lang and next < forloop.length %}
+                    {% endif %}
+            
+                  {% endunless %}
+               {% endfor %}
+                
+              </div>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link disabled" href="#">Disabled</a>
@@ -114,7 +137,7 @@
       <div class="container panel_title">
 			
         <div class=" container panel panel_style">
-          <h1 class="panel-heading text-center">{{ page.title }}</h1>
+          <h1 class="panel-heading text-center">{% t global.{{ page.title }} %}</h1>
         </div>
         
       </div>
@@ -124,30 +147,30 @@
           <div class="container">
             <div class="row">
               <div class="footer-col">
-                <h4>3D Project</h4>
+                <h4>{% t global.project %}</h4>
                 <ul>
                   <li><a href="#">Project information</a></li>
-                  <li><a href="#">Contributors</a></li>
-                  <li><a href="#">Maps</a></li>
-                  <li><a href="#">Resources</a></li>
+                  <li><a href="#">{% t global.contact %}</a></li>
+                  <li><a href="#">{% t global.maps %}</a></li>
+                  <li><a href="#">{% t global.resources %}</a></li>
                 </ul>
               </div>
               <div class="footer-col">
                 <h4>Artisans</h4>
                 <ul>
-                  <li><a href="#">Tomas Brand</a></li>
-                  <li><a href="#">Domiciano Carreno</a></li>
-                  <li><a href="#">Antonio De La Cruz Gomera</a></li>
-                  <li><a href="#">Milquiades Medina Ferrera</a></li>
+                  <li><a href="#">{% t global.Jorge %}</a></li>
+                  <li><a href="#">{% t global.Tomas %}</a></li>
+                  <li><a href="#">{% t global.Domiciano %}</a></li>
+                  <li><a href="#">{% t global.Milquiades %}</a></li>
                 </ul>
               </div>
               <div class="footer-col">
                 <h4>Useful Links</h4>
                 <ul>
-                  <li><a href="#">Updates & Events</a></li>
-                  <li><a href="#">Blogs</a></li>
-                  <li><a href="#">Maps</a></li>
-                  <li><a href="#">Resources</a></li>
+                  <li><a href="#">{% t global.updates %}</a></li>
+                  <li><a href="#">{% t global.blogs %}</a></li>
+                  <li><a href="#">{% t global.maps %}</a></li>
+                  <li><a href="#">{% t global.resources %}</a></li>
                 </ul>
               </div>
               <div class="footer-col">

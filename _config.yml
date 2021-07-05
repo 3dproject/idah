@@ -1,8 +1,7 @@
 name: Heather
 markdown: kramdown
 
-plugins:
-  - jekyll-multiple-languages-plugin
+
 
 	
 languages: ["en", "es"]

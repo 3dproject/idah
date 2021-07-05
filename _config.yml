@@ -1,10 +1,7 @@
 name: Heather
 markdown: kramdown
-<<<<<<< HEAD
 
 
-=======
->>>>>>> c71876948d75ff480d302616206078babb43c3f1
 	
 languages: ["en", "es"]
 exclude_from_localizations: ["jscode", "css", "scripts","_sass","styles"]

@@ -1,6 +1,9 @@
 name: Heather
 markdown: kramdown
 
+plugins:
+  - jekyll-multiple-languages-plugin
 
+	
 languages: ["en", "es"]
 exclude_from_localizations: ["jscode", "css", "scripts","_sass","styles"]

@@ -1,5 +1,6 @@
 name: Heather
 markdown: kramdown
+baseurl: /idah
 
 languages: ["en", "es"]
 exclude_from_localizations: ["jscode", "css", "scripts","_sass","styles"]
